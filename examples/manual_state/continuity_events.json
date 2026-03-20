@@ -1,0 +1,50 @@
+[
+  {
+    "agentId": "uno:agent:d94450a96fa540ea8527055fd04e5fcd",
+    "anchors": [],
+    "eventType": "inception",
+    "id": "uno:event:b4c81931486b48048afd5d2d77cd91e3",
+    "lineageLinks": [],
+    "payloadDigest": {
+      "algorithm": "sha-256",
+      "value": "d0f4b460cf16e22f883e4f465930adbd01ca49882349a8bad7e6d4f5baacf2b2"
+    },
+    "previousEventDigest": null,
+    "recordedAt": "2026-03-20T14:22:30Z",
+    "sequence": 0,
+    "signature": {
+      "algorithm": "ed25519",
+      "keyId": "uno:agent:d94450a96fa540ea8527055fd04e5fcd#key-1",
+      "value": "BSx++uM6GZumLfS2TlwJYhtv/BUT4+LMpsVGVbb6B4LQXqCnMkzefd8aKAhOjZ6NP8siaHds7bA96X4Nyp2hAA=="
+    },
+    "taxonomySnapshot": [
+      {
+        "label": "agent",
+        "namespace": "uno.taxonomy",
+        "path": [
+          "kind",
+          "agent"
+        ],
+        "version": "v1"
+      },
+      {
+        "label": "assistant",
+        "namespace": "uno.taxonomy",
+        "path": [
+          "role",
+          "assistant"
+        ],
+        "version": "v1"
+      },
+      {
+        "label": "offline",
+        "namespace": "uno.taxonomy",
+        "path": [
+          "context",
+          "offline"
+        ],
+        "version": "v1"
+      }
+    ]
+  }
+]

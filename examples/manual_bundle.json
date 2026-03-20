@@ -1,0 +1,145 @@
+{
+  "agentId": {
+    "controller": "local-manual-controller",
+    "createdAt": "2026-03-20T14:22:30Z",
+    "displayName": "UNO Manual Demo Agent",
+    "id": "uno:agent:d94450a96fa540ea8527055fd04e5fcd",
+    "keys": [
+      {
+        "algorithm": "ed25519",
+        "fingerprint": "a09e19059672b1f58522d28a93c5bf07c562dd36f3e904b2baeac728ddc53bca",
+        "id": "uno:agent:d94450a96fa540ea8527055fd04e5fcd#key-1",
+        "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAhiUZSPTH3KgSUcHzRZUg/hxuCJjXjnj20jJ7ne6eu1Y=\n-----END PUBLIC KEY-----\n",
+        "status": "active",
+        "validFrom": "2026-03-20T14:22:30Z"
+      }
+    ],
+    "lineageRoot": "uno:agent:d94450a96fa540ea8527055fd04e5fcd",
+    "metadata": {
+      "runtime": "uno-local-demo",
+      "runtimeVersion": "0.3.0",
+      "signatureNote": "Ed25519 signatures produced locally with the cryptography (PyCA) library; no network service required.",
+      "signatureRuntime": "cryptography-pyca",
+      "signatureScheme": "ed25519"
+    },
+    "status": "active",
+    "taxonomy": [
+      {
+        "label": "agent",
+        "namespace": "uno.taxonomy",
+        "path": [
+          "kind",
+          "agent"
+        ],
+        "version": "v1"
+      },
+      {
+        "label": "assistant",
+        "namespace": "uno.taxonomy",
+        "path": [
+          "role",
+          "assistant"
+        ],
+        "version": "v1"
+      },
+      {
+        "label": "offline",
+        "namespace": "uno.taxonomy",
+        "path": [
+          "context",
+          "offline"
+        ],
+        "version": "v1"
+      }
+    ],
+    "updatedAt": "2026-03-20T14:22:30Z"
+  },
+  "assertions": [],
+  "buildAttestation": {
+    "attestedAt": "2026-03-20T14:22:30Z",
+    "manifest": {
+      "builder": "uno-demo",
+      "built_at": "2026-03-20T14:22:30Z",
+      "codeHash": {
+        "algorithm": "sha-256",
+        "files": [
+          "runtime/uno_runtime.py",
+          "runtime/uno_witness.py"
+        ],
+        "value": "a1df49a18ee9997ac5f3d7b5effb6ac751979ec602cdb076f7ee6025cece24e4"
+      },
+      "version": "uno-build-manifest-1"
+    },
+    "manifestDigest": {
+      "algorithm": "sha-256",
+      "value": "63848fdf8ea5cd6a98aaaa45a80747135918861daff18eb8652b728909b23e91"
+    },
+    "note": "Local build coherence only. No TEE or strong remote attestation.",
+    "type": "uno-build-attestation-1"
+  },
+  "bundleVersion": "uno-local-demo-2",
+  "continuityEvents": [
+    {
+      "agentId": "uno:agent:d94450a96fa540ea8527055fd04e5fcd",
+      "anchors": [],
+      "eventType": "inception",
+      "id": "uno:event:b4c81931486b48048afd5d2d77cd91e3",
+      "lineageLinks": [],
+      "payloadDigest": {
+        "algorithm": "sha-256",
+        "value": "d0f4b460cf16e22f883e4f465930adbd01ca49882349a8bad7e6d4f5baacf2b2"
+      },
+      "previousEventDigest": null,
+      "recordedAt": "2026-03-20T14:22:30Z",
+      "sequence": 0,
+      "signature": {
+        "algorithm": "ed25519",
+        "keyId": "uno:agent:d94450a96fa540ea8527055fd04e5fcd#key-1",
+        "value": "BSx++uM6GZumLfS2TlwJYhtv/BUT4+LMpsVGVbb6B4LQXqCnMkzefd8aKAhOjZ6NP8siaHds7bA96X4Nyp2hAA=="
+      },
+      "taxonomySnapshot": [
+        {
+          "label": "agent",
+          "namespace": "uno.taxonomy",
+          "path": [
+            "kind",
+            "agent"
+          ],
+          "version": "v1"
+        },
+        {
+          "label": "assistant",
+          "namespace": "uno.taxonomy",
+          "path": [
+            "role",
+            "assistant"
+          ],
+          "version": "v1"
+        },
+        {
+          "label": "offline",
+          "namespace": "uno.taxonomy",
+          "path": [
+            "context",
+            "offline"
+          ],
+          "version": "v1"
+        }
+      ]
+    }
+  ],
+  "exportedAt": "2026-03-20T14:22:30Z",
+  "lineageLinks": [],
+  "runtime": {
+    "name": "uno-local-demo",
+    "network": "none",
+    "signatureScheme": {
+      "algorithm": "ed25519",
+      "implementation": "cryptography-pyca",
+      "note": "Ed25519 signatures produced locally with the cryptography (PyCA) library; no network service required."
+    },
+    "version": "0.3.0"
+  },
+  "unoSpecVersion": "1.0.0",
+  "witnessReceipts": []
+}

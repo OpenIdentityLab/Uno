@@ -1,0 +1,13 @@
+{
+  "builder": "uno-demo",
+  "built_at": "2026-03-20T14:22:30Z",
+  "codeHash": {
+    "algorithm": "sha-256",
+    "files": [
+      "runtime/uno_runtime.py",
+      "runtime/uno_witness.py"
+    ],
+    "value": "a1df49a18ee9997ac5f3d7b5effb6ac751979ec602cdb076f7ee6025cece24e4"
+  },
+  "version": "uno-build-manifest-1"
+}

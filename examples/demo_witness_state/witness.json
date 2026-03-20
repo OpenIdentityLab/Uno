@@ -1,0 +1,15 @@
+{
+  "createdAt": "2026-03-20T14:22:24Z",
+  "displayName": "UNO Portable Witness",
+  "id": "uno:witness:dd033bc767b9435b8cb00604c5661664",
+  "key": {
+    "algorithm": "ed25519",
+    "fingerprint": "fd538a828b79ce5bd485689aee42273e26b81834910beb41168ee8ce33185043",
+    "id": "uno:witness:dd033bc767b9435b8cb00604c5661664#key-1",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/ImyKzUf3G5/k32pfE3Gi5Z7oFGPpqWNkmcFXFdo5ds=\n-----END PUBLIC KEY-----\n",
+    "status": "active",
+    "validFrom": "2026-03-20T14:22:24Z"
+  },
+  "note": "Portable external witness, offline/local CLI.",
+  "proof": "portable-offline-cli"
+}

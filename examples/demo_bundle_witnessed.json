@@ -1,0 +1,338 @@
+{
+  "agentId": {
+    "controller": "local-demo-controller",
+    "createdAt": "2026-03-20T14:22:23Z",
+    "displayName": "UNO Local Demo Agent",
+    "id": "uno:agent:348a4ca9c0464807ab0d416af539a940",
+    "keys": [
+      {
+        "algorithm": "ed25519",
+        "fingerprint": "0417502c9f651956b74268e5d64a7f1407ddd7150f71b19add1f2db554b8da5d",
+        "id": "uno:agent:348a4ca9c0464807ab0d416af539a940#key-1",
+        "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAAM7WrpH2uWnIhhXFflPWUNp8RwQvWHtky1nQz0zmTj0=\n-----END PUBLIC KEY-----\n",
+        "status": "active",
+        "validFrom": "2026-03-20T14:22:23Z"
+      }
+    ],
+    "lineageRoot": "uno:agent:348a4ca9c0464807ab0d416af539a940",
+    "metadata": {
+      "runtime": "uno-local-demo",
+      "runtimeVersion": "0.3.0",
+      "signatureNote": "Ed25519 signatures produced locally with the cryptography (PyCA) library; no network service required.",
+      "signatureRuntime": "cryptography-pyca",
+      "signatureScheme": "ed25519"
+    },
+    "status": "active",
+    "taxonomy": [
+      {
+        "label": "agent",
+        "namespace": "uno.taxonomy",
+        "path": [
+          "kind",
+          "agent"
+        ],
+        "version": "v1"
+      },
+      {
+        "label": "continuity-runtime",
+        "namespace": "uno.taxonomy",
+        "path": [
+          "role",
+          "continuity-runtime"
+        ],
+        "version": "v1"
+      },
+      {
+        "label": "offline-demo",
+        "namespace": "uno.taxonomy",
+        "path": [
+          "context",
+          "offline-demo"
+        ],
+        "version": "v1"
+      }
+    ],
+    "updatedAt": "2026-03-20T14:22:24Z"
+  },
+  "assertions": [],
+  "buildAttestation": {
+    "attestedAt": "2026-03-20T14:22:24Z",
+    "manifest": {
+      "builder": "uno-demo",
+      "built_at": "2026-03-20T14:22:24Z",
+      "codeHash": {
+        "algorithm": "sha-256",
+        "files": [
+          "runtime/uno_runtime.py",
+          "runtime/uno_witness.py"
+        ],
+        "value": "a1df49a18ee9997ac5f3d7b5effb6ac751979ec602cdb076f7ee6025cece24e4"
+      },
+      "version": "uno-build-manifest-1"
+    },
+    "manifestDigest": {
+      "algorithm": "sha-256",
+      "value": "49cc89fdd19d24c02398f7bc071df47ce8debcdff4dc2ef4b4d3a1cea15d74d5"
+    },
+    "note": "Local build coherence only. No TEE or strong remote attestation.",
+    "type": "uno-build-attestation-1"
+  },
+  "bundleVersion": "uno-local-demo-2",
+  "continuityEvents": [
+    {
+      "agentId": "uno:agent:348a4ca9c0464807ab0d416af539a940",
+      "anchors": [],
+      "eventType": "inception",
+      "id": "uno:event:49c877ea13074998b99ede720c08e758",
+      "lineageLinks": [],
+      "payloadDigest": {
+        "algorithm": "sha-256",
+        "value": "87b03dd748b9fc0399d0a584a723d3b68362550c61283b10ec399a261a3e5679"
+      },
+      "previousEventDigest": null,
+      "recordedAt": "2026-03-20T14:22:23Z",
+      "sequence": 0,
+      "signature": {
+        "algorithm": "ed25519",
+        "keyId": "uno:agent:348a4ca9c0464807ab0d416af539a940#key-1",
+        "value": "qTTpI0DXXyoh5uWo0tBbAgPWUn1JQDW+868tUc8/C62rDH9ydgAQP1sNxP1GJXuQ5mdj7jjJnxTO+d1cNySiBw=="
+      },
+      "taxonomySnapshot": [
+        {
+          "label": "agent",
+          "namespace": "uno.taxonomy",
+          "path": [
+            "kind",
+            "agent"
+          ],
+          "version": "v1"
+        },
+        {
+          "label": "continuity-runtime",
+          "namespace": "uno.taxonomy",
+          "path": [
+            "role",
+            "continuity-runtime"
+          ],
+          "version": "v1"
+        },
+        {
+          "label": "offline-demo",
+          "namespace": "uno.taxonomy",
+          "path": [
+            "context",
+            "offline-demo"
+          ],
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "agentId": "uno:agent:348a4ca9c0464807ab0d416af539a940",
+      "anchors": [],
+      "eventType": "taxonomy-update",
+      "id": "uno:event:11eb67d0b6864858961b8beae292740b",
+      "lineageLinks": [],
+      "payloadDigest": {
+        "algorithm": "sha-256",
+        "value": "c57be78e4b3068c3fd1096e41291ba38b49c76c7115b1d64b4870f6c26cbdf2a"
+      },
+      "previousEventDigest": {
+        "algorithm": "sha-256",
+        "value": "4c2e66ff379f2b3c86aa6a1a91a4ee933350006aa00efb5ac6935c419d6f8805"
+      },
+      "recordedAt": "2026-03-20T14:22:24Z",
+      "sequence": 1,
+      "signature": {
+        "algorithm": "ed25519",
+        "keyId": "uno:agent:348a4ca9c0464807ab0d416af539a940#key-1",
+        "value": "W+CMlOI4E8Tbm/O7bHv/sbe5DD2jmmD/Lj/28jzum5eEaHaRADIfCL7UWxjkGoN/aeJnXEEB2R4Nsq+4XXIhBQ=="
+      },
+      "taxonomySnapshot": [
+        {
+          "label": "agent",
+          "namespace": "uno.taxonomy",
+          "path": [
+            "kind",
+            "agent"
+          ],
+          "version": "v1"
+        },
+        {
+          "label": "continuity-runtime",
+          "namespace": "uno.taxonomy",
+          "path": [
+            "role",
+            "continuity-runtime"
+          ],
+          "version": "v1"
+        },
+        {
+          "label": "offline-demo",
+          "namespace": "uno.taxonomy",
+          "path": [
+            "context",
+            "offline-demo"
+          ],
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "agentId": "uno:agent:348a4ca9c0464807ab0d416af539a940",
+      "anchors": [],
+      "eventType": "lineage-update",
+      "id": "uno:event:43ca4c0d6ab144dcb574fcc20d4cd9af",
+      "lineageLinks": [
+        "uno:lineage:1476cda64ea64738825abb37c9dc5f3b"
+      ],
+      "payloadDigest": {
+        "algorithm": "sha-256",
+        "value": "f956903a06e507a81e29457d6a6970fecf2ddfa99ad4ac12d3f6f4a9fa5db7a6"
+      },
+      "previousEventDigest": {
+        "algorithm": "sha-256",
+        "value": "94c0e5adf1acaeeac73eda6997db18de939c62416ec1894f5cac8dbc6823d297"
+      },
+      "recordedAt": "2026-03-20T14:22:24Z",
+      "sequence": 2,
+      "signature": {
+        "algorithm": "ed25519",
+        "keyId": "uno:agent:348a4ca9c0464807ab0d416af539a940#key-1",
+        "value": "3wtAcn3bb2dtCIKrORbB6Ym0GVZFB2UJVpJsw1DeLaxE6LnHPe7/t7c4DiJkYuSNefQNhj+v1veDBnEYj+GGDw=="
+      },
+      "taxonomySnapshot": [
+        {
+          "label": "agent",
+          "namespace": "uno.taxonomy",
+          "path": [
+            "kind",
+            "agent"
+          ],
+          "version": "v1"
+        },
+        {
+          "label": "continuity-runtime",
+          "namespace": "uno.taxonomy",
+          "path": [
+            "role",
+            "continuity-runtime"
+          ],
+          "version": "v1"
+        },
+        {
+          "label": "offline-demo",
+          "namespace": "uno.taxonomy",
+          "path": [
+            "context",
+            "offline-demo"
+          ],
+          "version": "v1"
+        }
+      ]
+    }
+  ],
+  "exportedAt": "2026-03-20T14:22:24Z",
+  "lineageLinks": [
+    {
+      "assertedAt": "2026-03-20T14:22:24Z",
+      "id": "uno:lineage:1476cda64ea64738825abb37c9dc5f3b",
+      "notes": "Spawned from the UNO foundation seed for demo lineage",
+      "relation": "spawned-by",
+      "sourceAgentId": "uno:foundation:seed",
+      "targetAgentId": "uno:agent:348a4ca9c0464807ab0d416af539a940",
+      "taxonomyInheritance": "partial"
+    }
+  ],
+  "runtime": {
+    "name": "uno-local-demo",
+    "network": "none",
+    "signatureScheme": {
+      "algorithm": "ed25519",
+      "implementation": "cryptography-pyca",
+      "note": "Ed25519 signatures produced locally with the cryptography (PyCA) library; no network service required."
+    },
+    "version": "0.3.0"
+  },
+  "unoSpecVersion": "1.0.0",
+  "witnessReceipts": [
+    {
+      "eventDigest": {
+        "algorithm": "sha-256",
+        "value": "4c2e66ff379f2b3c86aa6a1a91a4ee933350006aa00efb5ac6935c419d6f8805"
+      },
+      "eventId": "uno:event:49c877ea13074998b99ede720c08e758",
+      "id": "uno:receipt:1a7bff3b16704d1abe5649a296cd1b0f",
+      "observedAt": "2026-03-20T14:22:24Z",
+      "proof": "portable-offline-cli",
+      "receiptType": "external",
+      "signature": {
+        "algorithm": "ed25519",
+        "keyId": "uno:witness:dd033bc767b9435b8cb00604c5661664#key-1",
+        "value": "l3d2j882cSpHsMUrW0StbHZhptRlmUxEiaS45XxsIOZKlrVZlwmcvOohP3cRl9dU5xo8gPJK+ij7CSkT4oGrDg=="
+      },
+      "witness": "UNO Portable Witness",
+      "witnessId": "uno:witness:dd033bc767b9435b8cb00604c5661664",
+      "witnessPublicKey": {
+        "algorithm": "ed25519",
+        "fingerprint": "fd538a828b79ce5bd485689aee42273e26b81834910beb41168ee8ce33185043",
+        "id": "uno:witness:dd033bc767b9435b8cb00604c5661664#key-1",
+        "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/ImyKzUf3G5/k32pfE3Gi5Z7oFGPpqWNkmcFXFdo5ds=\n-----END PUBLIC KEY-----\n",
+        "status": "active",
+        "validFrom": "2026-03-20T14:22:24Z"
+      }
+    },
+    {
+      "eventDigest": {
+        "algorithm": "sha-256",
+        "value": "94c0e5adf1acaeeac73eda6997db18de939c62416ec1894f5cac8dbc6823d297"
+      },
+      "eventId": "uno:event:11eb67d0b6864858961b8beae292740b",
+      "id": "uno:receipt:c3392809c78c4c928841e329a20b66b8",
+      "observedAt": "2026-03-20T14:22:24Z",
+      "proof": "portable-offline-cli",
+      "receiptType": "external",
+      "signature": {
+        "algorithm": "ed25519",
+        "keyId": "uno:witness:dd033bc767b9435b8cb00604c5661664#key-1",
+        "value": "40G4qNhDaWuiXFbCA1H9EkgozPd/yQhM6ICggatCLw6DXR771d6hUYMSDGHDIsgsV6Ef8jRTtyk04dUhwJvfCw=="
+      },
+      "witness": "UNO Portable Witness",
+      "witnessId": "uno:witness:dd033bc767b9435b8cb00604c5661664",
+      "witnessPublicKey": {
+        "algorithm": "ed25519",
+        "fingerprint": "fd538a828b79ce5bd485689aee42273e26b81834910beb41168ee8ce33185043",
+        "id": "uno:witness:dd033bc767b9435b8cb00604c5661664#key-1",
+        "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/ImyKzUf3G5/k32pfE3Gi5Z7oFGPpqWNkmcFXFdo5ds=\n-----END PUBLIC KEY-----\n",
+        "status": "active",
+        "validFrom": "2026-03-20T14:22:24Z"
+      }
+    },
+    {
+      "eventDigest": {
+        "algorithm": "sha-256",
+        "value": "c648d714596d94c9f53d07c9d7889f7cd0d5f06a3d48124e864b079f81600666"
+      },
+      "eventId": "uno:event:43ca4c0d6ab144dcb574fcc20d4cd9af",
+      "id": "uno:receipt:272d394aca4d43deaa304be9ea1bf597",
+      "observedAt": "2026-03-20T14:22:24Z",
+      "proof": "portable-offline-cli",
+      "receiptType": "external",
+      "signature": {
+        "algorithm": "ed25519",
+        "keyId": "uno:witness:dd033bc767b9435b8cb00604c5661664#key-1",
+        "value": "kqA6eDY+qQ+u6Az9+Nh47S+z9pjrblyrv45Cw10suucZb3l9QF9PGMOfZpul8swXF2TEAOoiD1xLXcX+81OKAw=="
+      },
+      "witness": "UNO Portable Witness",
+      "witnessId": "uno:witness:dd033bc767b9435b8cb00604c5661664",
+      "witnessPublicKey": {
+        "algorithm": "ed25519",
+        "fingerprint": "fd538a828b79ce5bd485689aee42273e26b81834910beb41168ee8ce33185043",
+        "id": "uno:witness:dd033bc767b9435b8cb00604c5661664#key-1",
+        "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/ImyKzUf3G5/k32pfE3Gi5Z7oFGPpqWNkmcFXFdo5ds=\n-----END PUBLIC KEY-----\n",
+        "status": "active",
+        "validFrom": "2026-03-20T14:22:24Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "eventDigest": {
+    "algorithm": "sha-256",
+    "value": "94c0e5adf1acaeeac73eda6997db18de939c62416ec1894f5cac8dbc6823d297"
+  },
+  "eventId": "uno:event:11eb67d0b6864858961b8beae292740b",
+  "id": "uno:receipt:c3392809c78c4c928841e329a20b66b8",
+  "observedAt": "2026-03-20T14:22:24Z",
+  "proof": "portable-offline-cli",
+  "receiptType": "external",
+  "signature": {
+    "algorithm": "ed25519",
+    "keyId": "uno:witness:dd033bc767b9435b8cb00604c5661664#key-1",
+    "value": "40G4qNhDaWuiXFbCA1H9EkgozPd/yQhM6ICggatCLw6DXR771d6hUYMSDGHDIsgsV6Ef8jRTtyk04dUhwJvfCw=="
+  },
+  "witness": "UNO Portable Witness",
+  "witnessId": "uno:witness:dd033bc767b9435b8cb00604c5661664",
+  "witnessPublicKey": {
+    "algorithm": "ed25519",
+    "fingerprint": "fd538a828b79ce5bd485689aee42273e26b81834910beb41168ee8ce33185043",
+    "id": "uno:witness:dd033bc767b9435b8cb00604c5661664#key-1",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/ImyKzUf3G5/k32pfE3Gi5Z7oFGPpqWNkmcFXFdo5ds=\n-----END PUBLIC KEY-----\n",
+    "status": "active",
+    "validFrom": "2026-03-20T14:22:24Z"
+  }
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "assertedAt": "2026-03-20T14:22:24Z",
+    "id": "uno:lineage:1476cda64ea64738825abb37c9dc5f3b",
+    "notes": "Spawned from the UNO foundation seed for demo lineage",
+    "relation": "spawned-by",
+    "sourceAgentId": "uno:foundation:seed",
+    "targetAgentId": "uno:agent:348a4ca9c0464807ab0d416af539a940",
+    "taxonomyInheritance": "partial"
+  }
+]

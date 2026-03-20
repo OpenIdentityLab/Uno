@@ -1,0 +1,55 @@
+{
+  "controller": "local-demo-controller",
+  "createdAt": "2026-03-20T14:22:23Z",
+  "displayName": "UNO Local Demo Agent",
+  "id": "uno:agent:348a4ca9c0464807ab0d416af539a940",
+  "keys": [
+    {
+      "algorithm": "ed25519",
+      "fingerprint": "0417502c9f651956b74268e5d64a7f1407ddd7150f71b19add1f2db554b8da5d",
+      "id": "uno:agent:348a4ca9c0464807ab0d416af539a940#key-1",
+      "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAAM7WrpH2uWnIhhXFflPWUNp8RwQvWHtky1nQz0zmTj0=\n-----END PUBLIC KEY-----\n",
+      "status": "active",
+      "validFrom": "2026-03-20T14:22:23Z"
+    }
+  ],
+  "lineageRoot": "uno:agent:348a4ca9c0464807ab0d416af539a940",
+  "metadata": {
+    "runtime": "uno-local-demo",
+    "runtimeVersion": "0.3.0",
+    "signatureNote": "Ed25519 signatures produced locally with the cryptography (PyCA) library; no network service required.",
+    "signatureRuntime": "cryptography-pyca",
+    "signatureScheme": "ed25519"
+  },
+  "status": "active",
+  "taxonomy": [
+    {
+      "label": "agent",
+      "namespace": "uno.taxonomy",
+      "path": [
+        "kind",
+        "agent"
+      ],
+      "version": "v1"
+    },
+    {
+      "label": "continuity-runtime",
+      "namespace": "uno.taxonomy",
+      "path": [
+        "role",
+        "continuity-runtime"
+      ],
+      "version": "v1"
+    },
+    {
+      "label": "offline-demo",
+      "namespace": "uno.taxonomy",
+      "path": [
+        "context",
+        "offline-demo"
+      ],
+      "version": "v1"
+    }
+  ],
+  "updatedAt": "2026-03-20T14:22:24Z"
+}

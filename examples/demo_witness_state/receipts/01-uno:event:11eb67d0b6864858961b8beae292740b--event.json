@@ -1,0 +1,51 @@
+{
+  "agentId": "uno:agent:348a4ca9c0464807ab0d416af539a940",
+  "anchors": [],
+  "eventType": "taxonomy-update",
+  "id": "uno:event:11eb67d0b6864858961b8beae292740b",
+  "lineageLinks": [],
+  "payloadDigest": {
+    "algorithm": "sha-256",
+    "value": "c57be78e4b3068c3fd1096e41291ba38b49c76c7115b1d64b4870f6c26cbdf2a"
+  },
+  "previousEventDigest": {
+    "algorithm": "sha-256",
+    "value": "4c2e66ff379f2b3c86aa6a1a91a4ee933350006aa00efb5ac6935c419d6f8805"
+  },
+  "recordedAt": "2026-03-20T14:22:24Z",
+  "sequence": 1,
+  "signature": {
+    "algorithm": "ed25519",
+    "keyId": "uno:agent:348a4ca9c0464807ab0d416af539a940#key-1",
+    "value": "W+CMlOI4E8Tbm/O7bHv/sbe5DD2jmmD/Lj/28jzum5eEaHaRADIfCL7UWxjkGoN/aeJnXEEB2R4Nsq+4XXIhBQ=="
+  },
+  "taxonomySnapshot": [
+    {
+      "label": "agent",
+      "namespace": "uno.taxonomy",
+      "path": [
+        "kind",
+        "agent"
+      ],
+      "version": "v1"
+    },
+    {
+      "label": "continuity-runtime",
+      "namespace": "uno.taxonomy",
+      "path": [
+        "role",
+        "continuity-runtime"
+      ],
+      "version": "v1"
+    },
+    {
+      "label": "offline-demo",
+      "namespace": "uno.taxonomy",
+      "path": [
+        "context",
+        "offline-demo"
+      ],
+      "version": "v1"
+    }
+  ]
+}

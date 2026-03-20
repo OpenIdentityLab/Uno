@@ -1,0 +1,17 @@
+[project]
+name = "uno-protocol"
+version = "0.3.0"
+description = "Verifiable identity protocol for AI agents"
+readme = "README.md"
+license = "AGPL-3.0-or-later"
+requires-python = ">=3.10"
+dependencies = [
+    "cryptography>=43.0",
+]
+
+[project.urls]
+Repository = "https://github.com/uno-protocol/uno"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"

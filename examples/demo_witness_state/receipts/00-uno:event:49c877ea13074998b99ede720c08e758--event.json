@@ -1,0 +1,48 @@
+{
+  "agentId": "uno:agent:348a4ca9c0464807ab0d416af539a940",
+  "anchors": [],
+  "eventType": "inception",
+  "id": "uno:event:49c877ea13074998b99ede720c08e758",
+  "lineageLinks": [],
+  "payloadDigest": {
+    "algorithm": "sha-256",
+    "value": "87b03dd748b9fc0399d0a584a723d3b68362550c61283b10ec399a261a3e5679"
+  },
+  "previousEventDigest": null,
+  "recordedAt": "2026-03-20T14:22:23Z",
+  "sequence": 0,
+  "signature": {
+    "algorithm": "ed25519",
+    "keyId": "uno:agent:348a4ca9c0464807ab0d416af539a940#key-1",
+    "value": "qTTpI0DXXyoh5uWo0tBbAgPWUn1JQDW+868tUc8/C62rDH9ydgAQP1sNxP1GJXuQ5mdj7jjJnxTO+d1cNySiBw=="
+  },
+  "taxonomySnapshot": [
+    {
+      "label": "agent",
+      "namespace": "uno.taxonomy",
+      "path": [
+        "kind",
+        "agent"
+      ],
+      "version": "v1"
+    },
+    {
+      "label": "continuity-runtime",
+      "namespace": "uno.taxonomy",
+      "path": [
+        "role",
+        "continuity-runtime"
+      ],
+      "version": "v1"
+    },
+    {
+      "label": "offline-demo",
+      "namespace": "uno.taxonomy",
+      "path": [
+        "context",
+        "offline-demo"
+      ],
+      "version": "v1"
+    }
+  ]
+}
