@@ -8,6 +8,13 @@
 
 UNO is an open protocol for declaring, proving, and verifying the identity of AI agents. It functions as a civil registry for the human-machine world: not a decorative badge, but a structured dossier — declaration, cryptographic proof, lineage, continuity history, and revocable status. The protocol operates at two levels simultaneously. Externally, it provides accountability: any third party can verify what an agent is, who operates it, and under what conditions it is valid. Internally, it provides continuity: an agent can carry its own verifiable history and refer back to its own state over time. Accountability is self-awareness seen from the outside. Continuity is accountability seen from the inside.
 
+
+## Manifesto
+
+UNO is not only a codebase. Its design principles are defined in the manifesto: neutrality, sobriety, auditability, human accountability, and revocability.
+
+Read: [MANIFESTO.md](MANIFESTO.md)
+
 ---
 
 ## Architecture
@@ -113,6 +120,8 @@ See [`README_RUN.md`](README_RUN.md) for the full manual witness flow.
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Core texts: [MANIFESTO.md](MANIFESTO.md) · [PROTOCOL_SCHEMA_V1.md](PROTOCOL_SCHEMA_V1.md)
 
 ---
 
