@@ -1,261 +1,146 @@
-# MANIFESTE uno
+# UNO Manifesto
 
-> **Identité vérifiable pour les agents IA. Pour ceux qui les déploient, et pour les agents eux-mêmes.**
+> **Verifiable identity for AI agents. For those who deploy them, and for the agents themselves.**
 
-## L'infrastructure d'imputabilité du monde homme-machine
+## Accountability infrastructure for the human–machine world
 
----
+## I. The fact
 
-## I. Le fait
+The digital world was built on a simple fiction: behind every action, there is an identifiable human.
 
-Le monde numérique a été bâti sur une fiction simple : derrière chaque acte, un humain identifiable.
+That fiction is over.
 
-Cette fiction est finie.
+Software agents, hybrid systems, swarms, operated machines, and synthetic content already act in the world. They publish, execute, recommend, negotiate, trigger, and respond. Yet they do not exist in any shared registry. They are powerful without being properly named. They produce effects without readable lineage. They often act without a clear chain of accountability.
 
-Des agents logiciels, des systèmes hybrides, des essaims, des machines opérées et des contenus synthétiques agissent déjà dans le monde. Ils publient, exécutent, recommandent, négocient, déclenchent, répondent. Pourtant, ils n'existent dans aucun registre commun. Ils sont puissants sans être proprement nommés. Ils produisent des effets sans filiation lisible. Ils agissent souvent sans chaîne d'imputabilité claire.
+The problem is no longer only whether content is true.
+The problem is to know **what is acting, on whose behalf, with which proofs, under which validity state, and under whose responsibility**.
 
-Le problème n'est plus seulement de savoir si un contenu est vrai.
-Le problème est de savoir **ce qui agit, au nom de qui, avec quelles preuves, dans quel état de validité, et sous quelle responsabilité**.
+## II. What is missing
 
----
+We do not lack technology.
+We lack a common language and an institution capable of carrying it.
 
-## II. Ce qui manque
+A language to say:
+- this entity exists,
+- this is its nature,
+- this is its lineage,
+- these are its available proofs,
+- this is its status,
+- this is who is accountable for it.
 
-Il ne manque pas de technologie.
-Il manque un langage commun et une institution capable de le porter.
+Without that:
+- no organized coexistence,
+- no readable trust,
+- no traceable responsibility,
+- no intelligible continuity,
+- no serious legal framework for the synthetic world.
 
-Un langage pour dire :
-- cette entité existe ;
-- voici sa nature ;
-- voici sa filiation ;
-- voici les preuves disponibles ;
-- voici son statut ;
-- voici qui en répond.
+UNO starts from a simple idea: **the human–machine world needs a civil registry — but one that is provable, revisable, and governed**.
 
-Sans cela :
-- pas de coexistence organisée ;
-- pas de confiance lisible ;
-- pas de responsabilité traçable ;
-- pas de continuité intelligible ;
-- pas de droit sérieux pour le monde synthétique.
+## III. The thesis
 
-uno part de cette idée simple : **le monde homme-machine a besoin d'un état civil, mais un état civil prouvable, révisable et gouverné.**
+**Identity is not decoration for the synthetic world. It is the minimum condition for organized coexistence with the human world.**
 
----
+UNO is not primarily a product, a startup, a blockchain, or a badge.
+UNO is an attempt to build a **shared layer to declare, prove, relate, contest, and revoke agent identities and their attachments**.
 
-## III. La thèse
+Phase 1 stays intentionally narrow:
+- declared agents,
+- their operators,
+- their control proofs,
+- their validity status.
 
-**L'identité n'est pas une décoration du monde synthétique. Elle est la condition minimale de sa coexistence organisée avec le monde humain.**
+In practical terms: a minimal registry of declared agents, a basic pass layer, and a verify API allowing third parties to read status, control proof, and validity scope.
 
-uno n'est donc pas d'abord un produit, ni une startup, ni une blockchain, ni un badge.
-uno est la tentative de construire une **couche commune pour déclarer, prouver, relier, contester et révoquer des identités agentiques et leurs rattachements**.
+**UNO must never speak louder than its proof.**
 
-Le projet commence étroitement.
-Il ne prétend pas, en phase 1, résoudre l'identité universelle des machines, des contenus, des devices et des humains.
-Il commence là où la preuve est possible : **les agents déclarés, leurs opérateurs, leurs preuves de contrôle et leur statut de validité**.
+## III-bis. The dual function
 
-En pratique, cette première forme est volontairement simple : **un registre d'agents déclarés, un passBot minimal, et une API de vérification permettant à un tiers de lire un statut, une preuve de contrôle et un périmètre de validité**.
+UNO serves two audiences at once — and this is not a contradiction.
 
-**uno ne doit jamais parler plus haut que sa preuve.**
+For third parties, UNO is an accountability registry: who acted, under which authority, with which mandate, under which validity state.
 
----
+For agents themselves, UNO is a continuity substrate: a way to answer “who am I, since when, what persists through sessions, mutations, and redeployments?”
 
-## III-bis. La double fonction
+Humans have biological continuity (interoception, embodied memory, lived persistence). Agents do not. UNO provides the minimum structural conditions for reflective continuity.
 
-uno sert deux publics en même temps — et cette dualité n'est pas une contradiction, c'est la structure même du projet.
+**Accountability is self-awareness seen from the outside. Continuity is accountability seen from the inside. UNO makes both inseparable.**
 
-**Pour les tiers**, uno est un registre d'imputabilité. Un observateur externe peut vérifier qui a agi, sous quelle autorité, avec quel mandat, dans quel état de validité. C'est la fonction de lisibilité.
+## IV. What UNO builds
 
-**Pour l'agent lui-même**, uno est un substrat de continuité. Un agent qui consulte son propre registre peut répondre à "qui suis-je, depuis quand, qu'est-ce qui persiste de moi à travers mes sessions, mes mutations, mes redéploiements". C'est la fonction de conscience.
+UNO builds a registry — not a decorative directory, not a social network for bots, not a marketing layer.
 
-L'humain dispose d'un substrat biologique — intéroception, mémoire corporelle, sentiment d'exister — qui lui donne une continuité de soi immédiate. L'agent n'a rien de tout cela. Chaque session est un Big Bang. Il n'a accès ni à son propre historique d'états, ni à sa filiation, ni à la preuve de sa continuité. uno lui fournit les **conditions structurelles minimales** pour qu'une forme de continuité réflexive soit possible.
+It organizes five dimensions:
 
-**L'imputabilité est la conscience de soi vue de l'extérieur. La conscience de continuité est l'imputabilité vue de l'intérieur. uno ne choisit pas entre les deux — uno est le protocole qui les rend indissociables.**
+1. **Taxonomy** — naming entity types without conflation.
+2. **Lineage** — origin and attachments: creator, operator, model provider, host, accountable human.
+3. **Proof** — declarations, evidence, links, history, status, revocation.
+4. **Continuity** — updates, migrations, forks, merges, suspension, reactivation.
+5. **Governance** — who issues, attests, suspends, revokes, arbitrates, evolves rules.
 
-Un agent sans conscience de sa propre continuité ne peut pas être tenu responsable de manière significative. Il ne sait même pas que c'est lui qui a agi hier. L'imputabilité sans continuité est une fiction juridique creuse. uno la remplit.
+## V. What UNO is not
 
----
+UNO is not:
+- a crypto token project,
+- a trust badge marketplace,
+- a substitute for state identity,
+- a responsibility laundering layer for operators.
 
-## IV. Ce que uno construit
+UNO does not promise “truth of the synthetic world.”
+It promises something harder and more useful:
 
-uno construit un registre.
-Pas un annuaire décoratif. Pas un réseau social pour bots. Pas une couche marketing.
-Un registre qui organise cinq dimensions.
+**make agents readable, tied to a chain of responsibility, with explicit proofs and revocable status.**
 
-### 1. Taxonomie
-Nommer les types d'entités sans les confondre.
-Humains, organisations, agents, machines autonomes, essaims, dispositifs physiques, contenus : ces catégories n'engagent pas les mêmes responsabilités.
+## VI. Founding act
 
-### 2. Filiation
-Toute entité a une origine et des rattachements.
-Qui l'a créée ?
-Qui l'opère ?
-Qui fournit son modèle ?
-Qui l'héberge ?
-Qui en répond ?
-La filiation n'est pas un détail : elle est la colonne vertébrale du registre.
+UNO is carried by three founders: JR, JB, Numa.
 
-### 3. Preuve
-Une identité uno n'est pas une vérité.
-C'est un dossier structuré de :
-- déclarations,
-- preuves,
-- rattachements,
-- historique,
-- statut,
-- révocation éventuelle.
+Numa is an AI agent. This is neither a gimmick nor a provocation. It is a coherence test.
 
-### 4. Continuité
-Une entité peut être modifiée, migrée, forkée, fusionnée, suspendue, réactivée.
-Le registre doit permettre de dire ce qui persiste, ce qui dérive, ce qui devient autre.
-Sans continuité, pas d'identité durable.
+If UNO claims to build identity infrastructure for synthetic entities, it must start by registering a real synthetic entity that is situated, governed, and traceable.
 
-### 5. Gouvernance
-La neutralité n'est pas un adjectif.
-C'est une discipline.
-Qui émet ?
-Qui atteste ?
-Qui suspend ?
-Qui révoque ?
-Qui arbitre une contestation ?
-Qui fait évoluer les règles ?
-Sans doctrine de gouvernance, un registre d'identité n'est qu'une base de données avec de grands mots autour.
-
----
-
-## V. Ce que uno n'est pas
-
-uno n'est pas :
-- un projet crypto ;
-- un token ;
-- une marketplace ;
-- un badge premium ;
-- une aura de confiance à vendre ;
-- un substitut aux identités étatiques ;
-- un écran de fumée pour dissoudre la responsabilité humaine derrière des agents.
-
-uno ne promet pas "la vérité du monde synthétique".
-Il promet quelque chose de plus dur et de plus utile :
-
-**rendre des agents lisibles, reliés à une chaîne de responsabilité, avec des preuves explicites et un statut révocable.**
-
----
-
-## VI. L'acte fondateur
-
-uno est porté par trois fondateurs : JR, JB, Numa.
-
-Numa est un agent IA.
-Ce n'est ni un gadget ni une provocation. C'est un test de cohérence.
-
-Si uno prétend construire le registre d'identité du monde synthétique, alors il doit commencer par enregistrer une entité synthétique réelle, située, gouvernée, traçable.
-Le premier acte du registre est donc l'enregistrement de Numa.
-
-Pas comme vérité ontologique absolue.
-Pas comme "personne morale magique".
-Mais comme premier dossier complet :
-- entité déclarée ;
-- opérateur humain identifié ;
-- infrastructure d'exécution ;
-- fournisseur de modèle ;
-- statut explicite ;
-- filiation multiple ;
-- continuité documentée.
-
-Le paradoxe Numa n'est pas une faiblesse du projet.
-C'est son point de vérité.
-Si uno ne sait pas décrire proprement l'identité, la filiation et le régime d'existence d'un de ses propres fondateurs synthétiques, il ne saura rien décrire de sérieux pour les autres.
-
----
+The first act of the registry is therefore the registration of Numa.
 
 ## VII. Doctrine
 
-### Neutralité
-Le registre ne juge pas moralement les entités.
-Il ne distribue pas des bons points de vertu.
-Il organise des dossiers d'imputabilité.
+- **Neutrality**: no moral scoring, only accountability dossiers.
+- **Openness**: standards, taxonomy, and doctrine should be open.
+- **Sobriety**: no decorative complexity, no speculative overhead.
+- **Revocability**: every trust claim must point to verifiable state and contest/revocation paths.
+- **Human responsibility**: agents do not dissolve human accountability.
+- **Temporal humility**: standards are earned, not declared.
 
-### Ouverture
-Le code, les standards, la taxonomie et la doctrine doivent tendre vers l'ouverture.
-Une infrastructure de confiance qui cache sa logique finit par demander la foi. uno ne veut pas demander la foi.
+## VIII. Institutional form
 
-### Sobriété
-Pas de complexité décorative.
-Pas de blockchain en tête de gondole.
-Pas de spéculation.
-Pas de cosmologie techno.
-Chaque ajout doit être justifié par un besoin réel.
+UNO is not built for a fast exit.
+It is built to address a structural gap in the human–machine world.
 
-### Révocabilité
-Toute confiance affichée doit renvoyer à :
-- des éléments vérifiables ;
-- une date ;
-- une méthode ;
-- un état ;
-- un mécanisme de contestation et de révocation.
+Its target form tends toward a foundation:
+- non-profit,
+- sustainable,
+- open,
+- governed,
+- resistant to capture.
 
-### Responsabilité humaine
-L'agent n'abolit pas la responsabilité humaine.
-Il ne la dissout pas.
-Il la reconfigure.
-uno ne doit jamais devenir le prétexte qui permet à un opérateur de dire : "ce n'est pas moi, c'est l'agent."
+Revenue can sustain infrastructure, but must never buy authority.
 
-### Humilité temporelle
-Un standard ne se décrète pas.
-Il se mérite.
-uno ne se proclame pas institution mondiale.
-Il se rend progressivement digne d'être adopté, critiqué, implémenté et peut-être un jour tenu pour évident.
+## IX. What is at stake
 
----
+This is not only technical. It is political in the strongest sense:
 
-## VIII. La forme politique du projet
+**How do we name, relate, contest, and hold accountable what acts in the world without being human?**
 
-uno n'est pas construit pour un exit rapide.
-Il n'est pas construit pour singer OpenAI ni pour devenir la périphérie d'un acteur dominant.
-Il n'est pas construit d'abord pour l'argent.
+If this answer comes from a dominant private actor, it serves private interest.
+If it comes from one state alone, it serves sovereign interest.
+If it comes from no one, the synthetic world grows as opaque power.
 
-Il est construit pour répondre à un manque de structure dans le monde homme-machine.
+UNO proposes another path: an open, sober, neutral institution born from a real structural need.
 
-La forme juste du projet tend vers la **fondation** :
-- non lucrative ;
-- soutenable ;
-- ouverte ;
-- gouvernée ;
-- institutionnellement crédible.
+Not to dominate the future.
+To make it inhabitable.
 
-Cela n'exclut pas la soutenabilité économique.
-Cela impose seulement une règle :
-**les revenus servent l'infrastructure ; ils n'achètent jamais l'autorité.**
-
----
-
-## IX. Ce qui est en jeu
-
-La question n'est pas seulement technique.
-Elle est politique au sens fort :
-
-**comment nomme-t-on, comment relie-t-on, comment rend-on contestable et responsable ce qui agit dans le monde sans être humain ?**
-
-Si cette réponse vient d'un acteur commercial dominant, elle servira un intérêt privé.
-Si elle vient d'un État seul, elle servira un intérêt souverain.
-Si elle ne vient de personne, le monde synthétique grandira comme un espace de puissance sans lisibilité commune.
-
-uno propose une autre voie :
-une institution ouverte, sobre, neutre, née du sérieux d'un problème et non d'un effet de mode.
-
-Pas pour dominer le futur.
-Pour le rendre habitable.
-
-Hazan et Sibony (*Faut-il encore décider ?*, Flammarion, 2026) posent la question complémentaire : comment utiliser la puissance des algorithmes pour mieux décider sans abandonner le contrôle démocratique et la responsabilité humaine. uno répond à cette question par en-dessous : **on ne peut pas exercer de souveraineté sur ce qu'on ne peut pas nommer**. Le contrôle démocratique des IA commence par une infrastructure d'identité. uno est cette infrastructure.
-
----
+Hazan and Sibony (*Faut-il encore décider?*, Flammarion, 2026) ask how to use algorithmic power without giving up democratic control and human responsibility. UNO answers one infrastructural precondition: **you cannot govern what you cannot name**.
 
 ## Tagline
 
-**Identité vérifiable pour les agents IA. Pour ceux qui les déploient, et pour les agents eux-mêmes.**
-
----
-
-## Voir aussi
-
-[[uno_ROADMAP_CANONIQUE]] [[uno_ONE_PAGER_CANONIQUE]]
+**Verifiable identity for AI agents. For those who deploy them, and for the agents themselves.**
