@@ -1,26 +1,26 @@
 # UNO V1 Foundation
 
-## Finalité canonique
-UNO V1 sert à rendre **vérifiable** l'identité, la continuité, la taxonomie minimale et la filiation minimale d'un agent.
+## Canonical purpose
+UNO V1 exists to make identity, continuity, minimal taxonomy, and minimal lineage of an AI agent **verifiable**.
 
 ## Non-goals
-- exécuter un agent
-- orchestrer un runtime, un réseau ou une infra
-- produire un scoring métier, une réputation ou une économie native
-- modéliser toute la sémantique business des agents
+- running an agent
+- orchestrating runtime/network/infra
+- producing business score, reputation, or native economics
+- modeling full business semantics of agents
 
-## Taxonomie minimale V1
-Un AgentID expose au moins :
-- **kind** — ce que c'est
-- **role** — à quoi il sert
-- **context** — dans quel cadre il opère
+## Minimal V1 taxonomy
+An AgentID exposes at least:
+- **kind** — what it is
+- **role** — what it does
+- **context** — where it operates
 
-## Filiation minimale V1
-Un agent peut déclarer au moins :
-- **lineage root** — racine de continuité
-- **relation** — dérivé de / fork de / remplace / engendré par
-- **source** — l'agent ou la branche de provenance
+## Minimal V1 lineage
+An agent may declare at least:
+- **lineage root** — continuity root
+- **relation** — derived from / fork of / supersedes / spawned by
+- **source** — source agent or branch
 
-## Frontière protocole / business
-Le protocole prouve des faits de continuité. Le business interprète ces faits.
-V1 standardise les preuves, pas leur valeur économique, réputationnelle ou commerciale.
+## Protocol/business boundary
+The protocol proves continuity facts. Business interprets these facts.
+V1 standardizes proofs, not their economic, reputational, or commercial value.

@@ -1,131 +1,131 @@
 # UNO — Protocol Schema V1
 
-## 1. Noyau protocolaire
+## 1. Core protocol objects
 
-Objets cœur V1 :
+V1 core objects:
 - `AgentID`
 - `ContinuityEvent`
 - `LineageLink`
 - `WitnessReceipt`
-- `Assertion` (optionnelle si nécessaire)
+- `Assertion` (optional when needed)
 
-Finalité : permettre à un tiers de vérifier **qui est l’agent**, **quelle est sa continuité**, **quelle est sa filiation**, et **s’il existe un problème bloquant**.
+Goal: allow a third party to verify **who the agent is**, **what its continuity is**, **what its lineage is**, and **whether a blocking trust issue exists**.
 
 ---
 
-## 2. Côté agent / couche protocolaire
+## 2. Agent-side protocol flow
 
-### Flux nominal
-1. L’agent (ou son opérateur) crée un `AgentID`
-   - identifiant
-   - contrôleur
-   - clés
-   - taxonomie minimale (`kind / role / context`)
+### Nominal flow
+1. The agent (or its operator) creates an `AgentID`
+   - identifier
+   - controller
+   - keys
+   - minimal taxonomy (`kind / role / context`)
    - `lineageRoot`
 
-2. Il émet un `ContinuityEvent` d’**inception** (`sequence = 0`)
-   - signature valide
+2. It emits an inception `ContinuityEvent` (`sequence = 0`)
+   - valid signature
    - `previousEventDigest = null`
-   - `payloadDigest` du contenu d’origine
+   - origin `payloadDigest`
 
-3. Si l’agent dérive d’un autre, il émet un `LineageLink`
+3. If the agent derives from another one, it emits a `LineageLink`
    - relation
    - source
-   - racine de lignée
+   - lineage root
 
-4. Un ou plusieurs témoins observent l’événement
-   - émission de `WitnessReceipt`
+4. One or more witnesses observe the event
+   - emit `WitnessReceipt`
 
-5. À chaque changement significatif, l’agent émet un nouveau `ContinuityEvent`
-   - rotation de clé
-   - update taxonomie
-   - ancrage assertion
-   - update filiation
-   - branche
-   - fusion
-   - révocation
+5. For each meaningful change, the agent emits a new `ContinuityEvent`
+   - key rotation
+   - taxonomy update
+   - assertion anchor
+   - lineage update
+   - branch
+   - merge
+   - revocation
 
-6. La continuité résulte de la chaîne ordonnée :
+6. Continuity is the ordered chain:
    - `AgentID`
    - `ContinuityEvent[0..n]`
    - `LineageLink[]`
    - `WitnessReceipt[]`
-   - `Assertion[]` si utile
+   - `Assertion[]` when relevant
 
-### Schéma mental
+### Mental model
 ```text
-Agent / opérateur
-  -> crée AgentID
-  -> signe ContinuityEvent#0
-  -> déclare LineageLink si nécessaire
-  -> obtient WitnessReceipt(s)
-  -> append ContinuityEvent#1, #2, #3...
-  -> produit un proof bundle vérifiable
+Agent / operator
+  -> creates AgentID
+  -> signs ContinuityEvent#0
+  -> declares LineageLink when needed
+  -> obtains WitnessReceipt(s)
+  -> appends ContinuityEvent#1, #2, #3...
+  -> produces a verifiable proof bundle
 ```
 
 ---
 
-## 3. Côté tiers / requêtage preuve
+## 3. Third-party verification flow
 
-### Entrée minimale
-Le tiers fournit soit :
-- un `AgentID`
-- soit un `proof bundle` contenant les objets nécessaires
+### Minimal input
+A verifier provides either:
+- an `AgentID`, or
+- a `proof bundle` containing the required objects
 
-### Ce que le tiers vérifie
-1. Intégrité des objets
-2. Validité des signatures
-3. Validité des clés au moment des signatures
-4. Ordre et chaînage des `ContinuityEvent`
-5. Cohérence minimale de la taxonomie
-6. Cohérence minimale de la filiation
-7. Présence / absence de `WitnessReceipt`
-8. Révocation ou contradiction majeure éventuelle
+### What is verified
+1. Object integrity
+2. Signature validity
+3. Key validity at signature time
+4. `ContinuityEvent` ordering and chaining
+5. Minimal taxonomy coherence
+6. Minimal lineage coherence
+7. Presence / absence of `WitnessReceipt`
+8. Revocation or major contradiction
 
-### Sortie minimale
-Le tiers récupère :
+### Minimal output
+The verifier gets:
 - `agentId`
-- état retenu
-  - taxonomie
-  - filiation
-  - statut
-- verdict
+- retained state:
+  - taxonomy
+  - lineage
+  - status
+- verdict:
   - `trust`
   - `warning`
   - `not-trusted`
-- raisons
-- preuves manquantes/faibles
+- reasons
+- missing/weak evidence
 
-### Schéma mental
+### Mental model
 ```text
-Tiers
-  -> fournit AgentID ou proof bundle
-  -> vérifie signatures + chaîne + filiation + reçus
-  -> résout l’état courant
-  -> reçoit verdict : trust / warning / not-trusted
+Verifier
+  -> provides AgentID or proof bundle
+  -> verifies signatures + chain + lineage + receipts
+  -> resolves retained state
+  -> returns verdict: trust / warning / not-trusted
 ```
 
 ---
 
-## 4. Question simple à laquelle UNO V1 répond
+## 4. Simple question answered by UNO V1
 
 ```text
-À qui ai-je affaire,
-quelle est sa continuité,
-d’où provient-il,
-et y a-t-il un problème bloquant de confiance ?
+Who am I dealing with,
+what is its continuity,
+where does it come from,
+and is there a blocking trust issue?
 ```
 
 ---
 
-## 5. Hors scope V1
+## 5. Out of scope for V1
 
-UNO V1 ne fait pas encore :
-- runtime d’agent
-- orchestration réseau/infra
-- scoring métier
-- réputation
-- logique business
-- jugement moral sur l’agent
+UNO V1 does not provide:
+- agent runtime
+- network/infra orchestration
+- business scoring
+- reputation systems
+- business logic
+- moral judgement over agents
 
-Il produit uniquement une **preuve minimale de continuité vérifiable**.
+It provides only a **minimal verifiable continuity proof**.

@@ -1,4 +1,4 @@
-# Specs UNO
+# UNO Specs
 
-Ce dossier contient les schémas du noyau protocolaire UNO.
-V1 décrit les objets minimaux pour identité, assertions, filiation, continuité et témoignage.
+This folder contains UNO core protocol schemas.
+V1 defines the minimal objects for identity, assertions, lineage, continuity, and witness receipts.
