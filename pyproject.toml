@@ -10,7 +10,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/uno-protocol/uno"
+Repository = "https://github.com/OpenIdentityLab/Uno"
 
 [build-system]
 requires = ["setuptools>=68.0"]
