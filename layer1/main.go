@@ -34,6 +34,12 @@ func main() {
 	}
 	log.Println("node ready")
 
+	time.Sleep(2 * time.Second)
+	if err := n.StartDiscovery(); err != nil {
+		log.Fatalf("mdns init failed: %v", err)
+	}
+	log.Println("mdns discovery enabled")
+
 	ticker := time.NewTicker(4 * time.Second)
 	defer ticker.Stop()
 

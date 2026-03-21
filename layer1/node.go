@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"sync"
+	"time"
 
 	libp2p "github.com/libp2p/go-libp2p"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
@@ -74,10 +75,11 @@ func NewNode(ctx context.Context, listenAddr string, vrfSeed string) (*Node, err
 		RevokesTopic:   revocations,
 	}
 
-	if err := setupMDNS(ctx, h); err != nil {
-		return nil, err
-	}
 	return n, nil
+}
+
+func (n *Node) StartDiscovery() error {
+	return setupMDNS(n.Host)
 }
 
 type discoveryNotifee struct {
@@ -88,14 +90,26 @@ func (n *discoveryNotifee) HandlePeerFound(pi peer.AddrInfo) {
 	if pi.ID == n.h.ID() {
 		return
 	}
-	if err := n.h.Connect(context.Background(), pi); err != nil {
-		log.Printf("mdns connect failed to %s: %v", pi.ID.String(), err)
-		return
+
+	delays := []time.Duration{0, 500 * time.Millisecond, time.Second, 2 * time.Second}
+	for i, delay := range delays {
+		if delay > 0 {
+			time.Sleep(delay)
+		}
+
+		log.Printf("dial attempt %d/3 to %s...", i+1, pi.ID.String())
+		if err := n.h.Connect(context.Background(), pi); err == nil {
+			log.Printf("mdns peer discovered: %s", pi.ID.String())
+			return
+		} else {
+			log.Printf("mdns connect failed to %s: %v", pi.ID.String(), err)
+		}
 	}
-	log.Printf("mdns peer discovered: %s", pi.ID.String())
+
+	log.Printf("failed to dial %s after 3 attempts", pi.ID.String())
 }
 
-func setupMDNS(ctx context.Context, h host.Host) error {
+func setupMDNS(h host.Host) error {
 	s := mdns.NewMdnsService(h, discoveryTag, &discoveryNotifee{h: h})
 	return s.Start()
 }
