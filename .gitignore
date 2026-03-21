@@ -4,3 +4,7 @@ __pycache__/
 runtime/state/
 runtime/witness_state/
 *.pem
+
+# build artifacts
+layer1/layer1
+layer1/layer1_darwin_arm64
