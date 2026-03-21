@@ -15,22 +15,36 @@ UNO is an open protocol. Contributions are welcome on the open challenges below 
 
 ## Open Challenges
 
-### Chantier #1 — Native consensus layer
+### Chantier #1 — Native consensus layer (Layer 1)
 
 **This is the primary open challenge.**
 
 The current runtime is local and offline. Layer 1 needs to become a decentralized consensus network where claws (validator nodes) reach quorum on the state of agent registries without depending on any external network infrastructure.
 
+**Stack validated (2026-03-21):**
+- **Language:** Go 1.21+
+- **Networking:** [go-libp2p](https://github.com/libp2p/go-libp2p) (Gossipsub v1.1 — used in production by ETH2, Filecoin, IPFS)
+- **VRF:** HKDF-SHA256 (self-contained, no external oracle)
+- **Consensus:** HotStuff-lite (2-phase BFT — simpler than pBFT, handles rotating quorums)
+- **Architecture doc:** [`docs/ARCHITECTURE_LAYER1.md`](docs/ARCHITECTURE_LAYER1.md)
+
+**The design:**
+- Open network — any UNO-registered claw can participate
+- No token, no stake, no rewards, no slash
+- Round T: VRF selects K producers + N verifiers → candidate block → 2/3 verifiers → finalized block
+- Revocation events are high-priority in gossip propagation
+- Layer 2 (Python API) communicates with Layer 1 (Go node) via IPC (local socket)
+
 **The need:**
 - Validators (claws) maintain and attest to the canonical state of the registry
-- Quorum is reached via a rotating VRF (Verifiable Random Function) — no fixed committee
+- Quorum is reached via a rotating VRF (not fixed committee)
 - No dependency on third-party chains, bridges, or external RPC providers
 - The network must be self-contained and auditable
 
-**Recommended starting points:**
-- [Cosmos SDK](https://docs.cosmos.network/) — modular consensus, ABCI interface
-- [KERI](https://keri.one/) — key event receipt infrastructure, directly relevant to the identity model
-- [libp2p](https://libp2p.io/) — transport layer for peer-to-peer networking
+**What is NOT Cosmos SDK:**
+- Cosmos/Tendermint uses a fixed validator set weighted by stake
+- UNO Layer 1 uses a rotating VRF-based quorum — fundamentally different mechanism
+- Cosmos SDK is not the right foundation for this design
 
 **Constraints:**
 - No third-party network dependency at consensus level
@@ -63,7 +77,9 @@ Implementation should:
 
 **Tests are mandatory.** Every functional change must include a test. The test suite must pass before merge.
 
-**No heavy dependencies.** The runtime runs on Python 3.10+ with only `cryptography` as a core dependency. New contributions must not introduce heavy libraries, external API calls at import time, or network requirements in the core runtime.
+**No heavy dependencies for Python runtime.** The runtime runs on Python 3.10+ with only `cryptography` as a core dependency. New contributions must not introduce heavy libraries, external API calls at import time, or network requirements in the core runtime.
+
+**Layer 1 is Go.** Contributions to Layer 1 (consensus, networking) must be in Go. The Python runtime is for identity, events, and verification. The Go node is for consensus.
 
 **The manifesto governs.** When a technical choice conflicts with the protocol's design principles (neutrality, sobriety, auditability, human accountability), the manifesto wins. Read [`MANIFESTO.md`](MANIFESTO.md) before proposing structural changes.
 
